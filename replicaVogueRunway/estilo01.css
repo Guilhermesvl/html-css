@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Vogue';
+    src: url('./fontes/Oxygen-Bold.ttf') format('TrueType') url('fontes/Oxygen-Light.ttf') format('TrurType') url('fontes/Oxygen-Regular.ttf') format('TrueType');
+}
+
+:root {
+    --fontPadrao: 'Vogue', Arial, sans-serif;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+header{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+h1 > img {
+   padding-bottom: 15px;
+}
+nav > a {
+    letter-spacing: 0.5px ;
+    font-size: 0.8em;
+    padding-top: 25px;
+    color: white;
+    font-family: var(--fontPadrao);
+    font-weight: bolder;
+    text-decoration: none;
+    padding-right: 15px;
+}
+
+nav {
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    
+}
+
+
+h1 > img {
+    display: block;
+    margin: auto;
+}
+
+main {
+    font-family: var(--fontPadrao);
+}
