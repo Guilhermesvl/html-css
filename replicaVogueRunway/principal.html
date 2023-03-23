@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilo01.css">
 </head>
+
 <body>
     <header>
         <h1>
@@ -18,31 +20,72 @@
             <a href="@">SEASONS</a>
             <a href="@">DESIGNERS</a>
             <a href="@">FEATURED</a>
-           
+
         </nav>
-    
-       </header>
+
+    </header>
     <main>
-        
-        <img src="imagens/primeiraFoto.webp" alt="">
+
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/primeiraFotoMENOR.webp">
+            <img src="imagens/primeiraFotoEDITADA.webp" alt="Modelos destaque Fashion Week">
+        </picture>
+
+
+
         <a href="@">
             <p>The Fall 2023 Jewelry Trnd Report</p>
         </a>
     </main>
-        <h2>HIGHLIGHTIS</h2>
-        <h2>FALL 2023 READY-TO-WEAR</h2>
 
-        <img src="imagens/versace.webp" alt="">
-        <p>Versace</p>
+    <h2 class="menor">HIGHLIGHTS</h2>
 
-        <img src="imagens/y-project.webp" alt="">
-        <p>Y/Project</p>
-        <img src="imagens/miu-miu.webp" alt="">
-        <p>Miu Miu</p>
-        <img src="chanel" alt="">
-        <p>Chanel</p>
-        <img src="imagens/rokh.webp" alt="">
-        <p>Rokh</p>
- 
+    <h2 class="maior">FALL 2023 READY-TO-WEAR</h2>
+
+    alo alo
+
+    <div class="row">
+
+        <div class="coluna">
+            <picture>
+                <source media="(max-width: 600px)" srcset="imagens/versaceSource.webp">
+                <img src="imagens/versaceNormal.webp" alt="Gigi for Versace">
+            </picture>
+            <p class="Legenda">Versace</p>
+        </div>
+
+        <div class="coluna">
+            <picture>
+                <source media="(max-with: 600px)" srcset="imagens/y-projectSource.webp">
+                <img src="imagens/y-projectNormal.webp" alt="Model for Y-project">
+            </picture>
+            <p class="Legenda">Y/Project</p>
+        </div>
+
+        <div class="coluna">
+            <picture>
+                <source media="(max-width: 600px)" srcset="imagens/miu-miuSource.webp">
+                <img src="imagens/miu-miuNormal.webp" alt="Mia Gith for Miu-Miu">
+            </picture>
+            <p class="Legenda">Miu Miu</p>
+        </div>
+
+        <div class="coluna">
+            <picture>
+                <source media="(max-width: 600px)" srcset="imagens/chanelSource.webp">
+                <img src="imagens/chanelNormal.webp" alt="Model for Chanel">
+            </picture>
+            <p class="Legenda">Chanel</p>
+        </div>
+
+        <div class="coluna">
+            <picture>
+                <source media="(max-width: 600px)" srcset="imagens/rokhSource.webp">
+                <img src="imagens/rokhNormal.webp" alt="Model for Rokh">
+                <p class="Legenda">Rokh</p>
+            </picture>
+        </div>
+    </div>
 </body>
+
 </html>

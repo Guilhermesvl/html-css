@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: 'Vogue';
-    src: url('./fontes/Oxygen-Bold.ttf') format('TrueType') url('fontes/Oxygen-Light.ttf') format('TrurType') url('fontes/Oxygen-Regular.ttf') format('TrueType');
+    src: url('./fontes/Oxygen-Light.ttf') format('TrueType');
+    font-weight: normal;
 }
 
 :root {
-    --fontPadrao: 'Vogue', Arial, sans-serif;
-
+    --fontPadrao: 'Vogue', sans-serif;
 }
 
 * {
@@ -21,15 +21,19 @@ header{
     color: white;
     padding: 20px;
     margin-bottom: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.253);
 }
 h1 > img {
-   padding-bottom: 15px;
+    padding-bottom: 15px;
+    display: block;
+    margin: auto;
 }
 nav > a {
     letter-spacing: 0.5px ;
     font-size: 0.8em;
     padding-top: 25px;
     color: white;
+    letter-spacing: 1.5px;
     font-family: var(--fontPadrao);
     font-weight: bolder;
     text-decoration: none;
@@ -41,15 +45,59 @@ nav {
     margin-top: 30px;
     padding-bottom: 10px;
     padding-right: 10px;
-    
-}
-
-
-h1 > img {
-    display: block;
-    margin: auto;
 }
 
 main {
     font-family: var(--fontPadrao);
 }
+
+picture > img {
+    display: inline-block;
+}
+main > picture {
+    display: block;
+    text-align: center;
+}
+
+picture {
+    display: inline-block;
+
+}
+a > p{
+    text-align: center;
+    
+}
+
+h2 {
+    letter-spacing: 1.5px;
+    font-family: var(--fontPadrao);
+    text-align: center;
+}
+h2.menor{
+    font-size: 12px;
+    padding: 12px;
+}
+h2.maior{
+    letter-spacing: 3px;
+    padding-bottom: 75px;
+}
+
+div.coluna{
+    float: left;
+    width: 16%;
+}
+p.Legenda {
+    text-align: center;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width: 500px) {
+    .column {
+        width: 100%
+    }
+}
+
