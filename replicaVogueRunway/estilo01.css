@@ -100,4 +100,20 @@ p.Legenda {
         width: 100%
     }
 }
-
+footer > h2 > img {
+    margin: 25px
+}
+footer{
+    text-indent: 'tab';
+    font-family: 'Vogue';
+    background-color: black;
+    color: white;
+}
+footer > a {
+    margin-left: 75px;
+    
+}
+ p.identacao{
+    margin-left: 75px;
+    font-size: 15px;
+ }
